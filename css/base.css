@@ -154,3 +154,24 @@ footer ul li a:active {
 small {
   font-size: 0.7rem;
 }
+
+/* responsive */
+
+@media(max-width: 600px) {
+  html {
+    font-size: 87.5%;
+  }
+  .header_logo {
+    width: 60px;
+  }
+  /* 600px以下の時、サイドバーを縦並びにする */
+  .contents {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  #main_content,
+  #sidebar {
+    width: 100%;
+  }
+}
